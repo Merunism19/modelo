@@ -21,6 +21,13 @@ The installer downloads `modelo.py`, creates a global `modelo` command, and
 installs `typer`, `huggingface_hub` and `requests`. Add the install folder to
 your `PATH` (the installer prints the exact line), then run `modelo --help`.
 
+**Pin to an exact version** — replace `/main` in the URL above with a tag (for
+example `/v0.1.0`) to install a specific release instead of the latest `main`:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Merunism19/modelo/v0.1.0/install.sh | sh
+```
+
 > The installer is hosted at `https://github.com/Merunism19/modelo`. The
 > `BASE_URL` used to fetch `modelo.py` lives in the installer scripts themselves,
 > so you can fork it, set a different `MODELO_URL` env var, or point it at a
